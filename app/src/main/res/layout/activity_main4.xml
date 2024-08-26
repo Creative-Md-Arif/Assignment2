@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+
+    <!-- Digit 1 EditText -->
+
+
+
+    <!-- Digit 2 EditText -->
+
+
+    <TextView
+        android:id="@+id/tv_verification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Phone Verification"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="That Phone Number"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_verification_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_verification_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verification_title" />
+
+    <!-- Digit 3 EditText -->
+
+    <!-- Digit 4 EditText -->
+
+    <!-- Submit Button -->
+
+    <!-- Resend TextView -->
+
+    <LinearLayout
+        android:id="@+id/ll_country_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_verification_title">
+
+
+        <!-- Country Flag ImageView -->
+        <ImageView
+            android:id="@+id/iv_country_flag"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/white"
+            android:contentDescription="Country Flag"
+            android:src="@drawable/baseline_flag_24" />
+
+        <!-- Down Arrow ImageView -->
+        <ImageView
+            android:id="@+id/iv_down_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            android:contentDescription="Down Arrow"
+            android:src="@drawable/baseline_arrow_drop_down_circle_24" />
+
+        <!-- Phone Number TextView -->
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="+1 123 456 7890"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_digit_1"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_verification_title" />
+
+    <EditText
+        android:id="@+id/et_digit_2"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit_3"
+        app:layout_constraintStart_toEndOf="@+id/et_digit_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_verification_title" />
+
+    <EditText
+        android:id="@+id/et_digit_3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit_4"
+        app:layout_constraintStart_toEndOf="@+id/et_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_verification_title" />
+
+    <EditText
+        android:id="@+id/et_digit_4"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_digit_3"
+        app:layout_constraintTop_toBottomOf="@id/tv_verification_title" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_digit_4" />
+
+    <TextView
+        android:id="@+id/tv_resend_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Resend Code"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
